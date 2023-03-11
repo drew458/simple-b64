@@ -15,20 +15,21 @@
 }
 
 #encode-string, #decode-string, #encoded-string, #decoded-string {
-  background-color: rgb(174, 171, 168);
+  background-color: #343434;
+  color: #fff;
 }
 
 #encode-title, #decode-title {
-  color: rgb(174, 171, 168);  
+  color: #fff;  
 }
 
 #encoded-text-title{
   margin-top: 50px;
-  color: rgb(174, 171, 168);
+  color: #fff;
 }
 
 #decoded-text-title{
   margin-top: 50px;
-  color: rgb(174, 171, 168);
+  color: #fff;
 }
 
