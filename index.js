@@ -1,5 +1,8 @@
+const encode = document.getElementById("encode-string");
+const decode = document.getElementById("decode-string");
+
 function encodeBase64() {
-    var textToEncode = document.getElementById("encode-string").value;
+    var textToEncode = encode.value;
 
     var encodedText = btoa(encodeURIComponent(textToEncode));
 
@@ -7,7 +10,7 @@ function encodeBase64() {
 }
 
 function decodeBase64() {
-    var textToDecode = document.getElementById("decode-string").value;
+    var textToDecode = decode.value;
 
     var decodedText = decodeURIComponent(atob(textToDecode));
 

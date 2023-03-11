@@ -14,12 +14,11 @@
         <div id="col-1">
             <h1>Encode to Base64</h1>
             <div>
-              <textarea id="encode-string" name="encode-string" rows="4" cols="50" ></textarea>
+              <textarea id="encode-string" oninput="encodeBase64(this.value)" rows="4" cols="50" ></textarea>
             </div>
             <div>
-              <button id="encode-button" onclick="encodeBase64();">Encode</button>
+              <h3 id="encoded-text-title">Encoded text</button>
             </div>
-
             <div>
               <textarea id="encoded-string" rows="20" cols="50" ></textarea>
             </div>
@@ -28,10 +27,10 @@
         <div id="col-2">
           <h1>Decode from Base64</h1>
           <div>
-            <textarea id="decode-string" name="decode-string" rows="4" cols="50" ></textarea>
+            <textarea id="decode-string" oninput="decodeBase64(this.value)" rows="4" cols="50" ></textarea>
           </div>
           <div>
-            <button id="decode-button" onclick="decodeBase64();">Decode</button>
+            <h3 id="decoded-text-title">Decoded text</button>
           </div>
 
           <div>
