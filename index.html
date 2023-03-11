@@ -13,12 +13,30 @@
     <section class="container">
         <div id="col-1">
             <h1>Encode to Base64</h1>
-            <textarea id="encode-string" name="encode-string" rows="4" cols="50" ></textarea>
-           <button>Ciao</button>
+            <div>
+              <textarea id="encode-string" name="encode-string" rows="4" cols="50" ></textarea>
+            </div>
+            <div>
+              <button id="encode-button" onclick="encodeBase64();">Encode</button>
+            </div>
+
+            <div>
+              <textarea id="encoded-string" rows="20" cols="50" ></textarea>
+            </div>
         </div>
 
         <div id="col-2">
           <h1>Decode from Base64</h1>
+          <div>
+            <textarea id="decode-string" name="decode-string" rows="4" cols="50" ></textarea>
+          </div>
+          <div>
+            <button id="decode-button" onclick="decodeBase64();">Decode</button>
+          </div>
+
+          <div>
+            <textarea id="decoded-string" rows="20" cols="50" ></textarea>
+          </div>
         </div>
     </section>
 

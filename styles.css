@@ -13,3 +13,19 @@
     text-align: center;
     flex: 1;
   }
+
+  #encode-button {
+    margin-top: 8px;
+  }
+
+  #decode-button {
+    margin-top: 8px;
+  }
+
+  #encoded-string{
+    margin-top: 50px;
+  }
+
+  #decoded-string{
+    margin-top: 50px;
+  }
