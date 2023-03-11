@@ -14,13 +14,21 @@
   flex: 1;
 }
 
+#encode-string, #decode-string, #encoded-string, #decoded-string {
+  background-color: rgb(174, 171, 168);
+}
+
+#encode-title, #decode-title {
+  color: rgb(174, 171, 168);  
+}
+
 #encoded-text-title{
   margin-top: 50px;
-  color: white;
+  color: rgb(174, 171, 168);
 }
 
 #decoded-text-title{
   margin-top: 50px;
-  color: white;
+  color: rgb(174, 171, 168);
 }
 
