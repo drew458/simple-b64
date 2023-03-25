@@ -3,4 +3,4 @@ Stupid-simple on-device Base64 encoder/decoder with automatic firing, using vani
 
 ## Interface
 
-![Main page](main-page.jpg)
+![Main page](main-page.png)
