@@ -1,4 +1,4 @@
-h1, h3 {
+h1, h2, h3 {
   color: #fff;
 }
 
@@ -50,7 +50,7 @@ h1, h3 {
 }
 
 #encoded-file {
-  margin-top: 20px;
+  margin-top: 100px;
   background-color: #343434;
   color: #fff;
   margin-bottom: 100px;

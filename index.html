@@ -11,36 +11,31 @@
   
   <body id="main-body">
 
+    <h1 style="text-align: center;">Bloat Free Base64 Encoder-Decoder</h1>
+
     <div class="container">
         <div id="vertical-cols">
-            <h1>Encode to Base64</h1>
-            <div>
-              <textarea id="encode-string" oninput="encodeBase64(this.value)" rows="4" cols="50"></textarea>
-            </div>
-            <div>
-              <h3 id="encoded-decoded-text-title">Encoded text</button>
-            </div>
-            <div>
-              <textarea id="encoded-string" rows="20" cols="50"></textarea>
-            </div>
+            <h2>Encode to Base64</h2>
+            
+            <textarea id="encode-string" oninput="encodeBase64(this.value)" rows="4" cols="50"></textarea>
+            
+            <h3 id="encoded-decoded-text-title">Encoded text</h3>
+            
+            <textarea id="encoded-string" rows="20" cols="50"></textarea>
         </div>
 
         <div id="vertical-cols">
-          <h1>Decode from Base64</h1>
-          <div>
-            <textarea id="decode-string" oninput="decodeBase64(this.value)" rows="4" cols="50" ></textarea>
-          </div>
-          <div>
-            <h3 id="encoded-decoded-text-title">Decoded text</button>
-          </div>
+          <h2>Decode from Base64</h2>
+          
+          <textarea id="decode-string" oninput="decodeBase64(this.value)" rows="4" cols="50" ></textarea>
+          
+          <h3 id="encoded-decoded-text-title">Decoded text</h3>
 
-          <div>
-            <textarea id="decoded-string" rows="20" cols="50" ></textarea>
-          </div>
+          <textarea id="decoded-string" rows="20" cols="50" ></textarea>
         </div>
     </div>
 
-    <h1 id="from-file-title">Generate Base64 from a file</h1>
+    <h2 id="from-file-title">Generate Base64 from a file</h2>
     <div id="drop-area">
       <div style="display: flex; align-items: center; justify-content: center;">
         <label id="drop-area-title" for="file-chosen">Drop a file here or click to upload</label>
