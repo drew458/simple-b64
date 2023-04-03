@@ -5,10 +5,18 @@ dropzone.addEventListener('dragover', function(e) {
     e.preventDefault();
 });
   
-dropzone.addEventListener('drop', function(e) {
+dropzone.addEventListener('drop', async function(e) {
     e.preventDefault();
     var file = e.dataTransfer.files[0];
+
     console.log('File released: ', file.name);
+
+    try {
+        document.getElementById("encoded-file").value = await toBase64(file);
+    } catch(error) {
+        console.error(error);
+        return;
+    }  
 });
 
 function encodeBase64() {
