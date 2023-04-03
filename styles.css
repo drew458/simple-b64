@@ -1,15 +1,18 @@
+h1, h3 {
+  color: #fff;
+}
+
+#main-body {
+  background-color:#1b1b1b
+}
+
 .container {
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
 }
 
-#col-1 {
-  text-align: center;
-  flex: 1;
-}
-
-#col-2 {
+#vertical-cols {
   text-align: center;
   flex: 1;
 }
@@ -19,17 +22,37 @@
   color: #fff;
 }
 
-#encode-title, #decode-title {
-  color: #fff;  
-}
-
-#encoded-text-title{
+#encoded-decoded-text-title {
   margin-top: 50px;
   color: #fff;
 }
 
-#decoded-text-title{
-  margin-top: 50px;
+#from-file-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#drop-area {
+  background-color: #343434;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 170px;
+}
+
+#drop-area-title {
   color: #fff;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+#file-chosen {
+  display: none;  
+}
+
+#encoded-file {
+  margin-top: 20px;
+  background-color: #343434;
+  color: #fff;
+  margin-bottom: 100px;
 }
 

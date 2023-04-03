@@ -9,35 +9,48 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   
-  <body style="background-color:#1b1b1b">
-    <section class="container">
-        <div id="col-1">
-            <h1 id="encode-title">Encode to Base64</h1>
+  <body id="main-body">
+
+    <div class="container">
+        <div id="vertical-cols">
+            <h1>Encode to Base64</h1>
             <div>
               <textarea id="encode-string" oninput="encodeBase64(this.value)" rows="4" cols="50"></textarea>
             </div>
             <div>
-              <h3 id="encoded-text-title">Encoded text</button>
+              <h3 id="encoded-decoded-text-title">Encoded text</button>
             </div>
             <div>
               <textarea id="encoded-string" rows="20" cols="50"></textarea>
             </div>
         </div>
 
-        <div id="col-2">
-          <h1 id="decode-title">Decode from Base64</h1>
+        <div id="vertical-cols">
+          <h1>Decode from Base64</h1>
           <div>
             <textarea id="decode-string" oninput="decodeBase64(this.value)" rows="4" cols="50" ></textarea>
           </div>
           <div>
-            <h3 id="decoded-text-title">Decoded text</button>
+            <h3 id="encoded-decoded-text-title">Decoded text</button>
           </div>
 
           <div>
             <textarea id="decoded-string" rows="20" cols="50" ></textarea>
           </div>
         </div>
-    </section>
+    </div>
+
+    <h1 id="from-file-title">Generate Base64 from a file</h1>
+    <div id="drop-area">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <label id="drop-area-title" for="file-chosen">Drop a file here or click to upload</label>
+        <input type="file" id="file-chosen" class="hidden" onchange="handleFile()" />
+      </div>
+    </div>
+
+    <div style="text-align: center;" >
+      <textarea id="encoded-file" rows="30" cols="108"></textarea>
+    </div>
 
 	<script src="index.js"></script>
   </body>
