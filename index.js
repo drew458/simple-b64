@@ -39,13 +39,14 @@ function decodeBase64() {
 
 const toBase64 = file => new Promise((resolve, reject) => {
     const reader = new FileReader();
+    
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result.split(',')[1]);
     reader.onerror = error => reject(error);
 });
 
 async function handleFile() {
-    var file = document.getElementById("file-chosen").files[0];
+    const file = document.getElementById("file-chosen").files[0];
 
     try {
         document.getElementById("encoded-file").value = await toBase64(file);

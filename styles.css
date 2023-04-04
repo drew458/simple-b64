@@ -32,11 +32,17 @@ h1, h2, h3 {
   text-align: center;
 }
 
-#drop-area {
+.drop-area {
   background-color: #343434;
   margin-left: 20%;
   margin-right: 20%;
+  border-radius: 7px;
   height: 170px;
+  
+  /* Center vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #drop-area-title {
@@ -50,7 +56,7 @@ h1, h2, h3 {
 }
 
 #encoded-file {
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #343434;
   color: #fff;
   margin-bottom: 100px;
