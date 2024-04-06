@@ -35,8 +35,8 @@
         </div>
     </div>
 
-    <h2 id="from-file-title">Generate Base64 from a file</h2>
-    <div class="drop-area">
+    <h2 id="from-file-title">Encode file to Base64</h2>
+    <div id="file-drop-area" class="drop-area">
       <div id="choose-file-button">
         <label id="drop-area-title" for="file-chosen">Drop a file here or click to upload</label>
         <input type="file" id="file-chosen" class="hidden" onchange="handleFile()" />
@@ -47,7 +47,7 @@
       <textarea id="encoded-file" rows="30" cols="108"></textarea>
     </div>
 
-	<script src="index.js"></script>
+	<script src="index.js" defer></script>
   </body>
 
 </html>

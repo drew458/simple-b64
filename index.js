@@ -1,11 +1,11 @@
-var dropzone = document.getElementById('drop-area');
+var dropzone = document.getElementById('file-drop-area');
 
 // Prevents browser default behaviour during drag and drop
 dropzone.addEventListener('dragover', function(e) {
     e.preventDefault();
 });
   
-dropzone.addEventListener('drop', async function(e) {
+dropzone.addEventListener('drop', async (e) => {
     e.preventDefault();
     var file = e.dataTransfer.files[0];
 
@@ -19,7 +19,7 @@ dropzone.addEventListener('drop', async function(e) {
     }  
 });
 
-function encodeBase64() {
+const encodeBase64 = () => {
     const encode = document.getElementById("encode-string");
     var textToEncode = encode.value;
 
@@ -28,7 +28,7 @@ function encodeBase64() {
     document.getElementById("encoded-string").value = encodedText;
 }
 
-function decodeBase64() {
+const decodeBase64 = () => {
     const decode = document.getElementById("decode-string");
     var textToDecode = decode.value;
 
@@ -45,13 +45,8 @@ const toBase64 = file => new Promise((resolve, reject) => {
     reader.onerror = error => reject(error);
 });
 
-async function handleFile() {
+const handleFile = async () => {
     const file = document.getElementById("file-chosen").files[0];
 
-    try {
-        document.getElementById("encoded-file").value = await toBase64(file);
-    } catch(error) {
-        console.error(error);
-        return;
-    }    
+    document.getElementById("encoded-file").value = await toBase64(file);       
 }
